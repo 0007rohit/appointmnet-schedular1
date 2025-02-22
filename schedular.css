@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: rgb(239, 217, 227);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+h1, h2 {
+    color: #444;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+input, select, button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+input:focus, select:focus {
+    border-color: #667eea;
+    outline: none;
+}
+button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: linear-gradient(135deg, #5643cc, #6b34a2);
+    transform: scale(1.05);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background: #f9f9f9;
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: slideIn 0.5s forwards;
+}
+.hind-light {
+    font-family: "Hind", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .hind-regular {
+    font-family: "Hind", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hind-medium {
+    font-family: "Hind", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .hind-semibold {
+    font-family: "Hind", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .hind-bold {
+    font-family: "Hind", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
